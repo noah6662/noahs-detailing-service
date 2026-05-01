@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Service Area</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Area</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body {margin:0;font-family:Montserrat,sans-serif;background:#0b0b0b;color:white;text-align:center;}
-nav {background:#111;padding:15px;}
-nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+
+nav {background:#111;padding:14px;}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:600;}
+
+.box {
+  background:#1a1a1a;
+  padding:25px;
+  margin:20px auto;
+  max-width:600px;
+  border-radius:12px;
+}
+
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ffce00;
+  color:black;
+  padding:15px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -22,26 +46,15 @@ nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
 
 <h1>Service Area</h1>
 
-<p style="max-width:600px;margin:auto;">
-We provide mobile detailing in your local area. We come directly to your home, apartment, or workplace.
-</p>
+<div class="box">
+We are a fully mobile detailing service. We come directly to your home, apartment, or workplace so you don’t have to go anywhere.
+</div>
 
-<h3 style="color:#ffce00;">🚗 Fully Mobile — We Come To You</h3>
-<a href="sms:5187744178"
-style="
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #ffce00;
-color: black;
-padding: 15px 18px;
-border-radius: 50px;
-font-weight: bold;
-text-decoration: none;
-box-shadow: 0 0 15px rgba(0,0,0,0.4);
-z-index: 9999;
-">
-💬 Text Me
-</a>
+<div class="box" style="color:#ffce00;">
+🚗 Mobile Only Service — Convenience First
+</div>
+
+<a class="float" href="sms:5187744178">💬 Text Me</a>
+
 </body>
 </html>
