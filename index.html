@@ -1,228 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Noah's Detailing Service</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #0b0b0b;
-  color: white;
-}
-
-/* NAV */
-nav {
-  background: rgba(0,0,0,0.85);
-  padding: 15px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* HERO */
-header {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
-  url('https://images.unsplash.com/photo-1601933470928-c8db2a3d175e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #ffce00;
-  color: black;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-/* SERVICES */
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.service-box {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 280px;
-}
-
-/* WHY */
-.why p {
-  max-width: 600px;
-  margin: 10px auto;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* SERVICE AREA */
-.area {
-  background: #0e0e0e;
-}
-
-/* CONTACT */
-.contact {
-  background: #111;
-}
-
-input, textarea {
-  width: 90%;
-  max-width: 400px;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: none;
-}
-
-button {
-  background: #ffce00;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-}
+body {margin:0;font-family:Montserrat,sans-serif;background:#0b0b0b;color:white;text-align:center;}
+nav {background:#111;padding:15px;}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+.hero {padding:120px 20px;background:#000;}
+.btn {background:#ffce00;color:black;padding:12px 20px;text-decoration:none;border-radius:8px;font-weight:bold;}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <a href="#services">Services</a>
-  <a href="#why">Why Us</a>
-  <a href="#area">Service Area</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="area.html">Service Area</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
-<header>
-  <div class="hero">
-    <h1>Premium Mobile Car Detailing</h1>
-    <p>We Come To You — Clean, Fast, Professional Results</p>
-    <a href="#contact" class="btn">📞 Book Now</a>
-  </div>
-</header>
+<div class="hero">
+  <h1>Premium Mobile Car Detailing</h1>
+  <p>We Come To You — Clean, Fast, Professional</p>
+  <a class="btn" href="contact.html">Book Now</a>
+</div>
 
-<section id="services">
-  <h2>Our Services</h2>
-
-  <div class="services">
-
-    <div class="service-box">
-      <h3>Interior Detail - $90</h3>
-      <p>Deep vacuum, carpet cleaning, surfaces wiped, leather & plastic conditioning.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Exterior Detail - $80</h3>
-      <p>Hand wash, wheels cleaned, windows, trim shine, tire shine.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Full Detail - $150</h3>
-      <p>Complete interior + exterior package for a full reset.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Extra Services</h3>
-      <p>Pet hair removal, odor removal, stain cleaning.</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="why" class="why">
-  <h2>Why Choose Us</h2>
-
-  <p>🚗 We come to you — no driving, no waiting.</p>
-  <p>💰 Affordable pricing — high quality without overcharging.</p>
-  <p>✨ Attention to detail — we don’t rush jobs.</p>
-  <p>⚡ Reliable — on time and professional every visit.</p>
-</section>
-
-<section id="area" class="area">
-  <h2>Service Area</h2>
-
-  <p style="max-width:600px; margin:auto; font-size:18px; color:#ccc; line-height:1.6;">
-    We provide mobile car detailing in your local area. We come directly to your home, apartment, or workplace so you don’t have to leave your driveway.
-  </p>
-
-  <p style="margin-top:15px; color:#ffce00; font-weight:bold;">
-    📍 Fully Mobile — We Come To You
-  </p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Me</h2>
-
-  <p>Email: <a href="mailto:28rauschn2010@gmail.com">28rauschn2010@gmail.com</a></p>
-  <p>Phone: <a href="tel:5187744178">518-774-4178</a></p>
-
-  <form action="https://formspree.io/f/mzzrkyzp" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<!-- FLOATING TEXT BUTTON -->
-<a href="sms:5187744178"
-   style="
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   background: #ffce00;
-   color: black;
-   padding: 15px 18px;
-   border-radius: 50px;
-   font-weight: bold;
-   text-decoration: none;
-   box-shadow: 0 0 15px rgba(0,0,0,0.4);
-   z-index: 9999;">
-   💬 Text Me
-</a>
+<h2>Why Choose Us</h2>
+<p>🚗 We come to you • 💰 Affordable • ✨ High attention to detail • ⚡ Reliable</p>
 
 </body>
 </html>
