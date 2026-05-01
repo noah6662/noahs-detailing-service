@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body {margin:0;font-family:Montserrat,sans-serif;background:#0b0b0b;color:white;text-align:center;}
-nav {background:#111;padding:15px;}
-nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
-input,textarea {width:80%;max-width:400px;padding:10px;margin:10px;border:none;border-radius:5px;}
-button {background:#ffce00;padding:12px 20px;border:none;border-radius:6px;font-weight:bold;}
+
+nav {background:#111;padding:14px;}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:600;}
+
+input,textarea {
+  width:80%;
+  max-width:420px;
+  padding:12px;
+  margin:10px;
+  border:none;
+  border-radius:6px;
+}
+
+button {
+  background:#ffce00;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ffce00;
+  color:black;
+  padding:15px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -33,21 +65,8 @@ button {background:#ffce00;padding:12px 20px;border:none;border-radius:6px;font-
 <textarea name="message" placeholder="Message"></textarea><br>
 <button type="submit">Send</button>
 </form>
-<a href="sms:5187744178"
-style="
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #ffce00;
-color: black;
-padding: 15px 18px;
-border-radius: 50px;
-font-weight: bold;
-text-decoration: none;
-box-shadow: 0 0 15px rgba(0,0,0,0.4);
-z-index: 9999;
-">
-💬 Text Me
-</a>
+
+<a class="float" href="sms:5187744178">💬 Text Me</a>
+
 </body>
 </html>
