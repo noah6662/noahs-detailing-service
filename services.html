@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Services</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body {margin:0;font-family:Montserrat,sans-serif;background:#0b0b0b;color:white;text-align:center;}
-nav {background:#111;padding:15px;}
-nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
-.box {background:#1a1a1a;margin:20px auto;padding:20px;max-width:400px;border-radius:10px;}
+
+nav {background:#111;padding:14px;}
+nav a {color:white;margin:0 15px;text-decoration:none;font-weight:600;}
+
+.card {
+  background:#1a1a1a;
+  padding:25px;
+  margin:15px auto;
+  max-width:420px;
+  border-radius:12px;
+  transition:0.3s;
+}
+.card:hover {transform:scale(1.03);background:#222;}
+
+.float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ffce00;
+  color:black;
+  padding:15px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
 </style>
 </head>
 
@@ -23,40 +48,27 @@ nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
 
 <h1>Our Services</h1>
 
-<div class="box">
-<h3>Interior Detail - $80</h3>
-<p>Full vacuum, surfaces cleaned, stains removed, interior refreshed.</p>
+<div class="card">
+<h3>Interior Detail</h3>
+Deep clean, stain removal, vacuum, full refresh.
 </div>
 
-<div class="box">
-<h3>Exterior Detail - $75</h3>
-<p>Hand wash, wheels, tire shine, streak-free finish.</p>
+<div class="card">
+<h3>Exterior Detail</h3>
+Hand wash, wheels cleaned, tire shine, protection.
 </div>
 
-<div class="box">
-<h3>Full Detail - $150</h3>
-<p>Complete inside + outside deep clean.</p>
+<div class="card">
+<h3>Full Detail</h3>
+Complete interior + exterior restoration.
 </div>
 
-<div class="box">
+<div class="card">
 <h3>Extras</h3>
-<p>Pet hair removal • Odor removal • Stain treatment</p>
+Pet hair removal • Odor elimination • Deep stain treatment
 </div>
-<a href="sms:5187744178"
-style="
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #ffce00;
-color: black;
-padding: 15px 18px;
-border-radius: 50px;
-font-weight: bold;
-text-decoration: none;
-box-shadow: 0 0 15px rgba(0,0,0,0.4);
-z-index: 9999;
-">
-💬 Text Me
-</a>
+
+<a class="float" href="sms:5187744178">💬 Text Me</a>
+
 </body>
 </html>
